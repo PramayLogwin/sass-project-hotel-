@@ -3,15 +3,19 @@
   margin: 0;
   padding: 0;
   font-family: "Times New Roman", Times, serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-.main-container .header-container--left, .navbar_img {
+.main-container .header-container--left, .navbar .menu, .navbar_img {
   display: flex;
   align-items: center;
 }
 
 .navbar {
-  background-color: rgb(243, 235, 235);
+  background-color: #fff;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -20,7 +24,7 @@
 }
 .navbar_img {
   margin-left: 25px;
-  color: black;
+  color: #a06d2c;
   font-size: 25px;
   text-decoration: none;
   font-weight: 900;
@@ -39,14 +43,30 @@
     right: 20px;
   }
 }
+.navbar .link {
+  margin-right: 25px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.navbar .link:hover {
+  color: #a06d2c;
+  border-bottom: 1px solid black;
+}
+@media screen and (max-width: 768px) {
+  .navbar .link {
+    display: none;
+  }
+}
 
-.main-container .header-container--left, .navbar_img {
+.main-container .header-container--left, .navbar_img, .navbar .menu {
   display: flex;
   align-items: center;
 }
 
 .navbar {
-  background-color: rgb(243, 235, 235);
+  background-color: #fff;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -55,7 +75,7 @@
 }
 .navbar_img {
   margin-left: 25px;
-  color: black;
+  color: #a06d2c;
   font-size: 25px;
   text-decoration: none;
   font-weight: 900;
@@ -72,9 +92,40 @@
     position: absolute;
     top: 30px;
     right: 20px;
+  }
+}
+.navbar .link {
+  margin-right: 25px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+.navbar .link:hover {
+  color: #a06d2c;
+  border-bottom: 1px solid black;
+}
+@media screen and (max-width: 768px) {
+  .navbar .link {
+    display: none;
   }
 }
 
 .main-container .header-container--left {
+  margin: 25px;
   justify-content: space-around;
-}/*# sourceMappingURL=style.css.map */
+  font-size: 25px;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: burlywood;
+}
+.main-container .hotel-images {
+  width: 100%;
+  position: absolute;
+  top: 72px;
+  box-shadow: black 5px 5px 8px 4px;
+  -webkit-animation: imageslider 2s linear infinite;
+          animation: imageslider 2s linear infinite;
+}
+@-webkit-keyframes imageslider {}
+@keyframes imageslider {}/*# sourceMappingURL=style.css.map */

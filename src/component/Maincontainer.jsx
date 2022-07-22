@@ -1,5 +1,5 @@
 import React from 'react';
-import img from "../img/mainpage.jpg";  
+import img from "../img/main-page-2.jpg"
 
 export default function Maincontainer() {
   return (
@@ -7,12 +7,11 @@ export default function Maincontainer() {
       {/* Main section */}
       <div className='main-container'>
         <div className='header-container--left'>
-          <h1>Hotel Royal Taj</h1>
-          <h2> WELCOME IN TAJ</h2>
+          
         </div>
 
         <div className='header-container--right'>
-          <img src={img} alt='Loading..' className='hotel-images'/>
+          <img src={img} alt='Loading..' className='hotel-images' />
         </div>
       </div>
     </>

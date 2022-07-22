@@ -7,7 +7,40 @@
 
     .header-container--left {
         @extend %align-center;
-        // text-align: center;
+        margin :25px;
         justify-content: space-around;
+        font-size: 25px;
+        font-style: italic;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: $burlywood;
+    }
+
+    // .header-container--right{
+        
+    // }
+
+    .hotel-images{
+        width: 100%;
+        position: absolute;
+        top: 72px; 
+        box-shadow: black 5px 5px 8px 4px;      
+        animation: imageslider 2s linear infinite;
+    }
+
+    @keyframes imageslider {
+        0%{
+            // background-image: url("img/main-page-2.jpg");
+        }
+        25%{
+
+        }
+        50%{
+
+        }75%{
+
+        }
+        100%{
+
+        }
     }
 }
