@@ -1,0 +1,38 @@
+@import "colors";
+@import "media-query";
+
+%align-center{
+    display: flex;
+    align-items: center;
+}
+.navbar {
+   background-color: $light;
+   height: 80px;
+   display: flex;
+   justify-content: space-between;
+   z-index: 10;
+   position: relative;
+
+
+   &_img{
+    margin-left: 25px;
+    color: $dark;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 900;
+    font-variant: small-caps;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @extend %align-center;
+}
+
+   .bar{
+    opacity: 0;
+    @include tablet-menu {
+        color: $dark;
+        opacity: 1;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+   }
+}

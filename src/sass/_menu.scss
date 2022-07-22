@@ -1,0 +1,13 @@
+@import "colors";
+@import "media-query";
+@import "header";
+
+
+.main-container {
+
+    .header-container--left {
+        @extend %align-center;
+        // text-align: center;
+        justify-content: space-around;
+    }
+}

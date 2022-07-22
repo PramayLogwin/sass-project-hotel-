@@ -1,0 +1,13 @@
+@mixin tablet-menu {
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+
+@mixin tablet-phone{
+    @media screen and (max-width:280px){
+        @content;
+    }
+}
+
+    
