@@ -3,11 +3,17 @@ import React from 'react';
 export default function Header() {
     return (
         <>
-            {/* navbar section */}
+            
             <nav className='navbar'>
                 <a href='/' className='navbar_img'> Hotel Royal Taj </a>
-                <div className='bar'>
-                    <i className='fas fa-bars'></i>
+                
+                <div className='phone-menu'>
+                    <a href='/' className='phone-links'></a>
+                    <a href='/Home' className='phone-links'> Home </a>
+                    <a href='/Location' className='phone-links'> Location </a>
+                    <a href='/About' className='phone-links'> About </a>
+                    <a href='/ContactUs' className='phone-links'> Contact Us </a>
+                    <a href='/SignIn' className='phone-links'> Sign In </a>
                 </div>
 
                 <div className='menu'>
@@ -18,6 +24,8 @@ export default function Header() {
                     <a href='/ContactUs' className='link'> Contact Us </a>
                     <a href='/SignIn' className='link'> Sign In </a>
                 </div>
+
+              
             </nav>
         </>
     )
